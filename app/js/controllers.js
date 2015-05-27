@@ -78,6 +78,8 @@ angular.module('weatherApp')
 			
       	};
 
+
+      	/*
 		var useLocation = function(){
 			locationData.yourLocation.then(function(data){
 				var location = data.results[0];
@@ -85,6 +87,7 @@ angular.module('weatherApp')
 				$scope.zip = parseInt(name.short_name);
 			});
 		};
+		*/
 
 		$scope.reset = function(){
 			$scope.resetColor();
