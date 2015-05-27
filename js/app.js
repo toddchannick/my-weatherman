@@ -4,7 +4,7 @@ angular.module('weatherApp', ['ngRoute', 'dataServices','ngAnimate','directives'
   function($locationProvider, $routeProvider) {
     $routeProvider
       .when("/home", {
-        templateUrl: "./partials/home.html",
+        templateUrl: "../partials/home.html",
         controller: "mainCtrl",
     })
       .otherwise({
