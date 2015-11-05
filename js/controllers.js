@@ -49,8 +49,8 @@ angular.module('weatherApp')
 
       		var details = $scope.details1;
       		var coords = details.geometry;
-	      		$scope.lat = coords.location.lat;
-	      		$scope.lon = coords.location.lon;
+	      		$scope.lat = coords.location.lat();
+	      		$scope.lon = coords.location.lon();
       		
       		//retrieving the current weather 
       		weatherData.getWeather($scope.lat,$scope.lon).then(function(result) {
